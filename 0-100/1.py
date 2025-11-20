@@ -22,6 +22,11 @@ def solve2():
     limit = 1000
     return SumMultiples(limit, 3) + SumMultiples(limit, 5) - SumMultiples(limit, 15)
 
+# NOTE: computational complexity comparison
+# Let n be the limit number, m be the number of factors
+# solution 1 has O(n * m)
+# solution 2 has O(2**m)
+
 if __name__ == "__main__":
     result = solve()
     print(result)
