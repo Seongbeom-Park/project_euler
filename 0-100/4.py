@@ -102,6 +102,8 @@ def solve_6():
                 max_palindrome = max(max_palindrome, n)
     return max_palindrome
 
+# NOTE: 6-digit palindrome이 존재한다는 가정하에, 11의 배수가 존재함. 없다면 동작하지 않는 코드임. 범용성 측면에서는 1개씩 iterate + memo가 나은 듯.
+
 if __name__ == '__main__':
     result = solve()
     print(result)
